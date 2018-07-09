@@ -68,7 +68,6 @@ The players in the game (also referred to as users) can chat with the members of
 As we discussed in the [previous section](https://eagronin.github.io/capstone-prepare/), chattier users, initiators of longer conversations and users who belowng to chattier teams and active user groups are likely to be more valuable, because of their potential to spread information to wider audiences.  As a result, Eglence, Inc. can increase its revenue by choosing the right marketing strategy to target such users, for example, showing the more expensive items to such users.  Even if these users are not going to buy these items, they may influence others in their networks to buy such items.
 
 ### Finding the longest conversation chain and its participants
-**Finding the longest conversation chain and its participants**
 The length of the longest conversation chain is 9.  The code that generated the longest conversation chain is shown below:
 
 ```GraphQL
@@ -87,7 +86,7 @@ where i in nodes(p)
 return count(distinct u)
 ```
 
-**Analyzing the relationship between top 10 chattiest users and top 10 chattiest teams**
+### Analyzing the relationship between top 10 chattiest users and top 10 chattiest teams
 The top 10 chattiest users were selected by counting the number of ChatItems created by each user and outputting the users by count in descending order.
 
 Chattiest Users
@@ -110,7 +109,7 @@ Team ID | Number of Chats
 
 Only one of the top 10 chattiest users (ID: 999) belongs to one of the top 10 chattiest teams (ID: 52).  This result was obtained by outputting the team IDs of the top 10 chattiest users and comparing these team IDs with the team IDs of the top 10 chattiest teams.
 
-**How Active Are Groups of Users?**
+### How Active Are Groups of Users?
 We will answer this queastion by computing an estimate of how “dense” the neighborhood of a node is. If we can identify highly interactive neighborhoods, we can potentially target some members of the neighborhood for direct advertising.
 
 The analysis of identifying such interactive neighborhoods was performed as follows.  First, an edge was created between any pair of users who either responded to each other’s chats or mentioned each other in a chat.  In that process, the edges of self-loops (e.g., a user responds to their own chat) were removed.  Second, a "clustering coefficient" ranking the top 10 chattiest users in terms of density of their neighborhoods was calculated for each user.  
