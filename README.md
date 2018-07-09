@@ -48,7 +48,7 @@ We performed cluster analysis in Spark to identify 3 distinct groups of users, b
 
 Cluster | #	Cluster Center array([teamLevel, accuracyRate, revenue])
 --- | ---
-1 | array([-0.89, -0.06, -o.31])
+1 | array([-0.89, -0.06, -0.31])
 2 | array([0.40, 0.38, 2.68])
 3 | array([0.84, -0.02, -0.25])
 
@@ -67,6 +67,7 @@ The players in the game (also referred to as users) can chat with the members of
 
 As we discussed in the [previous section](https://eagronin.github.io/capstone-prepare/), chattier users, initiators of longer conversations and users who belowng to chattier teams and active user groups are likely to be more valuable, because of their potential to spread information to wider audiences.  As a result, Eglence, Inc. can increase its revenue by choosing the right marketing strategy to target such users, for example, showing the more expensive items to such users.  Even if these users are not going to buy these items, they may influence others in their networks to buy such items.
 
+### Finding the longest conversation chain and its participants
 **Finding the longest conversation chain and its participants**
 The length of the longest conversation chain is 9.  The code that generated the longest conversation chain is shown below:
 
