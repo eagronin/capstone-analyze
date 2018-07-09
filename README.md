@@ -13,10 +13,10 @@ The analysis in this project was performed using Python, Spark, KNIME and Neo4j.
 
 This section is organized as follows:
 
-**Overview**<br/>
-**Classification Analysis**<br/>
-**Cluster Analysis**<br/>
-**Graph Analytics**
+1. **Overview**<br/>
+2. **Classification Analysis**<br/>
+3. **Cluster Analysis**<br/>
+4. **Graph Analytics**
 
 The analysis is described in the [previous section](https://eagronin.github.io/capstone-prepare/).
 
