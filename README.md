@@ -63,7 +63,7 @@ As we discussed in the [previous section](https://eagronin.github.io/capstone-pr
 ### Finding the longest conversation chain and its participants
 The length of the longest conversation chain is 9.  The code that generated the longest conversation chain is shown below:
 
-```Graph Modeling Language
+```GraphQL
 match p=(i1:ChatItem)-[:ResponseTo*]->(i2:ChatItem)
 return p, length(p) order by length(p) desc limit 1
 ```
