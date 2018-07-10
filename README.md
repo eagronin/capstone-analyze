@@ -101,7 +101,7 @@ Team ID | Number of Chats
 Only one of the top 10 chattiest users (ID: 999) belongs to one of the top 10 chattiest teams (ID: 52).  This result was obtained by outputting the team IDs of the top 10 chattiest users and comparing these team IDs with the team IDs of the top 10 chattiest teams.
 
 ### How Active Are Groups of Users?
-We will answer this queastion by computing an estimate of how “dense” the neighborhood of a node is. If we can identify highly interactive neighborhoods, we can potentially target some members of the neighborhood for direct advertising.
+We will answer this question by computing an estimate of how “dense” the neighborhood of a node is. If we can identify highly interactive neighborhoods, we can potentially target some members of the neighborhood for direct advertising.
 
 The analysis of identifying such interactive neighborhoods was performed as follows.  First, an edge was created between any pair of users who either responded to each other’s chats or mentioned each other in a chat.  In that process, the edges of self-loops (e.g., a user responds to their own chat) were removed.  Second, a "clustering coefficient" ranking the top 10 chattiest users in terms of density of their neighborhoods was calculated for each user.  
 
